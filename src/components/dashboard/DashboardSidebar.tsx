@@ -97,7 +97,7 @@ export function DashboardSidebar() {
         </div>
       </SidebarHeader>
       
-      <SidebarContent className="py-4">
+      <SidebarContent>
         {/* Admin Profile */}
         <div className="px-6 mb-6">
           <div className="flex items-center gap-3">

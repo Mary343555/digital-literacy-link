@@ -12,6 +12,9 @@ import Dashboard from "./pages/Dashboard";
 import DeviceManagement from "./pages/dashboard/DeviceManagement";
 import Connectivity from "./pages/dashboard/Connectivity";
 import Curriculum from "./pages/dashboard/Curriculum";
+import TutorTraining from "./pages/dashboard/TutorTraining";
+import ELearning from "./pages/dashboard/ELearning";
+import Sustainability from "./pages/dashboard/Sustainability";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +34,9 @@ const App = () => (
             <Route path="devices" element={<DeviceManagement />} />
             <Route path="connectivity" element={<Connectivity />} />
             <Route path="curriculum" element={<Curriculum />} />
+            <Route path="tutors" element={<TutorTraining />} />
+            <Route path="e-learning" element={<ELearning />} />
+            <Route path="sustainability" element={<Sustainability />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
