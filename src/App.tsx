@@ -15,6 +15,9 @@ import Curriculum from "./pages/dashboard/Curriculum";
 import TutorTraining from "./pages/dashboard/TutorTraining";
 import ELearning from "./pages/dashboard/ELearning";
 import Sustainability from "./pages/dashboard/Sustainability";
+import Monitoring from "./pages/dashboard/Monitoring";
+import Users from "./pages/dashboard/Users";
+import Reports from "./pages/dashboard/Reports";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +40,9 @@ const App = () => (
             <Route path="tutors" element={<TutorTraining />} />
             <Route path="e-learning" element={<ELearning />} />
             <Route path="sustainability" element={<Sustainability />} />
+            <Route path="monitoring" element={<Monitoring />} />
+            <Route path="users" element={<Users />} />
+            <Route path="reports" element={<Reports />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
